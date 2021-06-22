@@ -93,6 +93,7 @@ export /* istanbul ignore next */ class PipelineRunContainer extends Component {
           key={`${selectedTaskId}:${selectedStepId}`}
           pollingInterval={pollingInterval}
           stepStatus={stepStatus}
+          isLogsMaximized={isLogsMaximized}
         />
       </LogsRoot>
     );

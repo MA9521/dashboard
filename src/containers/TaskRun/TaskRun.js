@@ -176,6 +176,7 @@ export function TaskRunContainer(props) {
           fetchLogs={() => logsRetriever(stepName, stepStatus, run)}
           key={stepName}
           stepStatus={stepStatus}
+          isLogsMaximized={isLogsMaximized}
         />
       </LogsRoot>
     );

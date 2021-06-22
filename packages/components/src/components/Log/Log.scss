@@ -53,6 +53,23 @@ pre.tkn--log {
     right: 0;
   }
 
+  .bx--copy-btn.scroll-btn {
+    position: fixed;
+    height: 1.6rem;
+    width: 1.6rem; // this value is used next line
+    left:  calc(- 1.6rem + var(--log-element-right) * 1px);
+  }
+
+  
+  .scroll-to-top-btn { // the 4rem is an arbitrary value
+    top: calc(4rem + max(var(--log-element-top), var(--log-scrl-parent-top)) * 1px);
+  }
+
+  // thee 1.6rem is height of .bx--copy-btn.scroll-btn. 4rem is the same arbitrary value as above
+  .scroll-to-bottom-btn { // the arbitrary 4rem and 1.6rem width are used in Log.js
+    bottom: calc(4rem + 1.6rem + min(var(--log-element-bottom), var(--log-scrl-parent-bottom)) * 1px);
+  }
+
   .bx--copy-btn {
     width: 2rem;
     height: 2rem;
